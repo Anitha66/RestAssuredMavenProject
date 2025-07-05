@@ -1,4 +1,5 @@
 package restassuredtests;
+
 import java.util.Map;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -6,16 +7,15 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
-public class Demo2_PostRequestTest {
 
+public class Demo3_PUTRequestTest {
     public static Map<String, Object> newUser;
-    
     @BeforeClass
     public void payload() {
         // Create a new user object
          newUser = Map.of(
             "title", "Mr.",
-            "body", RestUtils.getRandomAlphaNumeric(10),
+            "body", "Anitha" +RestUtils.getRandomAlphaNumeric(10),
             "userId", RestUtils.getRandomAlphaNumeric(2)
         );
 
@@ -29,12 +29,11 @@ public class Demo2_PostRequestTest {
                             .and()
                             .body(newUser) // Attach the request body
                             .when()
-                            .post("/posts") // Specify the endpoint for the POST request
+                            .put("/posts/3") // Specify the endpoint for the POST request
                             .then()
                             .extract().response();
 
         // Print the response for debugging
         RestUtils.printResponse(response);
     }
-    
 }

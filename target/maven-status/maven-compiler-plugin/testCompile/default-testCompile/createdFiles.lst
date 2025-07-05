@@ -1,3 +1,6 @@
+restassuredtests\Demo3_PUTRequestTest.class
 restassuredtests\Demo2_PostRequestTest.class
+restassuredtests\Demo4_DeleteRequestTest.class
+restassuredtests\Demo5_BasicValidationsJSONTest.class
 restassuredtests\RestUtils.class
 restassuredtests\Demo1_GetRequestTest.class

@@ -13,10 +13,10 @@ public class Demo1_GetRequestTest {
         Response response = RestAssured
             .given()
             .when()
-            .get("https://jsonplaceholder.typicode.com/users/1")
+            .get("https://jsonplaceholder.typicode.com/posts/3")
             .then()
             .statusCode(200)
-            .body("id", equalTo(1))
+            .body("id", equalTo(3))
             .extract().response();
 
         System.out.println("Response: " + response.asString());
