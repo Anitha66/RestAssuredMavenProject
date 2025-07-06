@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasItem;
 
 public class Demo5_BasicValidationsJSONTest {
     // Test Status Code

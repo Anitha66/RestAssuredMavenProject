@@ -1,0 +1,83 @@
+package restassuredtests;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import org.testng.annotations.Test;
+
+import static org.hamcrest.Matchers.*;
+
+public class Demo6_SerializationNDeSerialization    {
+
+    public static class User {
+        private String title;
+        private String body;
+        private int userId;
+
+        // Getters and Setters
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getBody() {
+            return body;
+        }
+
+        public void setBody(String body) {
+            this.body = body;
+        }
+
+        public int getUserId() {
+            return userId;
+        }
+
+        public void setUserId(int userId) {
+            this.userId = userId;
+        }
+    }
+
+    @Test
+    public void testSerialization() {
+        User user = new User();
+        user.setTitle("Mr.");
+        user.setBody("Anitha" + RestUtils.getRandomAlphaNumeric(10));
+        user.setUserId(1);
+
+        Response response = RestAssured
+                .given()
+                .header("Content-type", "application/json")
+                .and()
+                .body(user) // Serialize the User object to JSON
+                .when()
+                .post("https://jsonplaceholder.typicode.com/posts")
+                .then()
+                .statusCode(201)
+                .extract().response();
+
+        System.out.println("Serialized Response: " + response.asString());
+    }
+    @Test
+    public void testDeserialization() {
+        Response response = RestAssured
+                .when()
+                .get("https://jsonplaceholder.typicode.com/posts/1")
+                .then()
+                .statusCode(200)
+                .extract().response();
+
+        User user = response.as(User.class); // Deserialize JSON to User object
+
+        System.out.println("Deserialized User: ");
+        System.out.println("Title: " + user.getTitle());
+        System.out.println("Body: " + user.getBody());
+        System.out.println("UserId: " + user.getUserId());
+    }
+
+
+
+
+ }
+  

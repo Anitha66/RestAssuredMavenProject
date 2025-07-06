@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.948 s <<< FAILURE! -- in TestSuite
-restassuredtests.Demo5_BasicValidationsJSONTest.testMultipleContent -- Time elapsed: 0.081 s <<< FAILURE!
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.582 s <<< FAILURE! -- in TestSuite
+restassuredtests.Demo5_BasicValidationsJSONTest.testMultipleContent -- Time elapsed: 0.082 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path title doesn't match.
-Expected: a collection containing "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+Expected: iterable containing ["molestias"]
   Actual: ea molestias quasi exercitationem repellat qui ipsa sit aut
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
@@ -33,7 +33,7 @@ Expected: a collection containing "ea molestias quasi exercitationem repellat qu
 	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at restassuredtests.Demo5_BasicValidationsJSONTest.testMultipleContent(Demo5_BasicValidationsJSONTest.java:51)
+	at restassuredtests.Demo5_BasicValidationsJSONTest.testMultipleContent(Demo5_BasicValidationsJSONTest.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

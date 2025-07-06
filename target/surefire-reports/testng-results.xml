@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T23:54:49 GMT-04:00" name="Surefire suite" finished-at="2025-07-04T23:54:53 GMT-04:00" duration-ms="4156">
+  <suite started-at="2025-07-06T18:25:52 GMT-04:00" name="Surefire suite" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="3940">
     <groups>
     </groups>
-    <test started-at="2025-07-04T23:54:49 GMT-04:00" name="Surefire test" finished-at="2025-07-04T23:54:53 GMT-04:00" duration-ms="4156">
+    <test started-at="2025-07-06T18:25:52 GMT-04:00" name="Surefire test" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="3940">
       <class name="restassuredtests.Demo4_DeleteRequestTest">
-        <test-method signature="DeletePost()[pri:0, instance:restassuredtests.Demo4_DeleteRequestTest@14a2f921]" started-at="2025-07-04T23:54:52 GMT-04:00" name="DeletePost" finished-at="2025-07-04T23:54:52 GMT-04:00" duration-ms="173" status="PASS">
+        <test-method signature="DeletePost()[pri:0, instance:restassuredtests.Demo4_DeleteRequestTest@14a2f921]" started-at="2025-07-06T18:25:56 GMT-04:00" name="DeletePost" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeletePost -->
       </class> <!-- restassuredtests.Demo4_DeleteRequestTest -->
       <class name="restassuredtests.Demo5_BasicValidationsJSONTest">
-        <test-method signature="testStatusCode()[pri:1, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-04T23:54:52 GMT-04:00" name="testStatusCode" finished-at="2025-07-04T23:54:52 GMT-04:00" duration-ms="68" status="PASS">
+        <test-method signature="testStatusCode()[pri:1, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testStatusCode" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatusCode -->
-        <test-method signature="testLogResponse()[pri:2, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-04T23:54:52 GMT-04:00" name="testLogResponse" finished-at="2025-07-04T23:54:52 GMT-04:00" duration-ms="46" status="PASS">
+        <test-method signature="testLogResponse()[pri:2, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testLogResponse" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogResponse -->
-        <test-method signature="testSingleContent()[pri:3, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-04T23:54:52 GMT-04:00" name="testSingleContent" finished-at="2025-07-04T23:54:53 GMT-04:00" duration-ms="77" status="PASS">
+        <test-method signature="testSingleContent()[pri:3, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testSingleContent" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSingleContent -->
-        <test-method signature="testMultipleContent()[pri:4, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-04T23:54:53 GMT-04:00" name="testMultipleContent" finished-at="2025-07-04T23:54:53 GMT-04:00" duration-ms="79" status="FAIL">
+        <test-method signature="testMultipleContent()[pri:4, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testMultipleContent" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="96" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
 JSON path title doesn't match.
-Expected: a collection containing "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+Expected: iterable containing ["molestias"]
   Actual: ea molestias quasi exercitationem repellat qui ipsa sit aut
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 JSON path title doesn't match.
-Expected: a collection containing "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+Expected: iterable containing ["molestias"]
   Actual: ea molestias quasi exercitationem repellat qui ipsa sit aut
 
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
@@ -64,7 +64,7 @@ at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSit
 at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at restassuredtests.Demo5_BasicValidationsJSONTest.testMultipleContent(Demo5_BasicValidationsJSONTest.java:51)
+at restassuredtests.Demo5_BasicValidationsJSONTest.testMultipleContent(Demo5_BasicValidationsJSONTest.java:52)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -102,37 +102,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultipleContent -->
-        <test-method signature="testHeaderContent()[pri:5, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-04T23:54:53 GMT-04:00" name="testHeaderContent" finished-at="2025-07-04T23:54:53 GMT-04:00" duration-ms="50" status="PASS">
+        <test-method signature="testHeaderContent()[pri:5, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testHeaderContent" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeaderContent -->
-        <test-method signature="testBaseURIAndPath()[pri:6, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-04T23:54:53 GMT-04:00" name="testBaseURIAndPath" finished-at="2025-07-04T23:54:53 GMT-04:00" duration-ms="73" status="PASS">
+        <test-method signature="testBaseURIAndPath()[pri:6, instance:restassuredtests.Demo5_BasicValidationsJSONTest@3c87521]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testBaseURIAndPath" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBaseURIAndPath -->
       </class> <!-- restassuredtests.Demo5_BasicValidationsJSONTest -->
       <class name="restassuredtests.Demo3_PUTRequestTest">
-        <test-method is-config="true" signature="payload()[pri:0, instance:restassuredtests.Demo3_PUTRequestTest@212bf671]" started-at="2025-07-04T23:54:52 GMT-04:00" name="payload" finished-at="2025-07-04T23:54:52 GMT-04:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="payload()[pri:0, instance:restassuredtests.Demo3_PUTRequestTest@212bf671]" started-at="2025-07-06T18:25:56 GMT-04:00" name="payload" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- payload -->
-        <test-method signature="testCreateUser()[pri:0, instance:restassuredtests.Demo3_PUTRequestTest@212bf671]" started-at="2025-07-04T23:54:52 GMT-04:00" name="testCreateUser" finished-at="2025-07-04T23:54:52 GMT-04:00" duration-ms="172" status="PASS">
+        <test-method signature="testCreateUser()[pri:0, instance:restassuredtests.Demo3_PUTRequestTest@212bf671]" started-at="2025-07-06T18:25:56 GMT-04:00" name="testCreateUser" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
       </class> <!-- restassuredtests.Demo3_PUTRequestTest -->
       <class name="restassuredtests.Demo2_PostRequestTest">
-        <test-method is-config="true" signature="payload()[pri:0, instance:restassuredtests.Demo2_PostRequestTest@2ed0fbae]" started-at="2025-07-04T23:54:51 GMT-04:00" name="payload" finished-at="2025-07-04T23:54:51 GMT-04:00" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="payload()[pri:0, instance:restassuredtests.Demo2_PostRequestTest@2ed0fbae]" started-at="2025-07-06T18:25:55 GMT-04:00" name="payload" finished-at="2025-07-06T18:25:55 GMT-04:00" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- payload -->
-        <test-method signature="testCreateUser()[pri:0, instance:restassuredtests.Demo2_PostRequestTest@2ed0fbae]" started-at="2025-07-04T23:54:51 GMT-04:00" name="testCreateUser" finished-at="2025-07-04T23:54:52 GMT-04:00" duration-ms="471" status="PASS">
+        <test-method signature="testCreateUser()[pri:0, instance:restassuredtests.Demo2_PostRequestTest@2ed0fbae]" started-at="2025-07-06T18:25:55 GMT-04:00" name="testCreateUser" finished-at="2025-07-06T18:25:56 GMT-04:00" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
       </class> <!-- restassuredtests.Demo2_PostRequestTest -->
       <class name="restassuredtests.Demo1_GetRequestTest">
-        <test-method signature="testGetUsers()[pri:0, instance:restassuredtests.Demo1_GetRequestTest@44a664f2]" started-at="2025-07-04T23:54:49 GMT-04:00" name="testGetUsers" finished-at="2025-07-04T23:54:51 GMT-04:00" duration-ms="2855" status="PASS">
+        <test-method signature="testGetUsers()[pri:0, instance:restassuredtests.Demo1_GetRequestTest@44a664f2]" started-at="2025-07-06T18:25:53 GMT-04:00" name="testGetUsers" finished-at="2025-07-06T18:25:55 GMT-04:00" duration-ms="2716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUsers -->
